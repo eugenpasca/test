@@ -7,47 +7,48 @@ use App\Exceptions\FailureResponseException;
 use App\Exceptions\LoginFailedException;
 use App\Exceptions\LoginUnAuthorizeException;
 use App\Http\Controllers\AppBaseController;
-use App\Http\Requests\Admin\RegisterAPIRequest;
-use App\Http\Requests\Admin\LoginAPIRequest;
+use App\Http\Requests\Admin\ChangePasswordApiRequest;
 use App\Http\Requests\Admin\ForgotPasswordAPIRequest;
+use App\Http\Requests\Admin\LoginAPIRequest;
+use App\Http\Requests\Admin\RegisterAPIRequest;
 use App\Http\Requests\Admin\ResetPasswordAPIRequest;
 use App\Http\Requests\Admin\ValidateResetPasswordOtpApiRequest;
-use App\Http\Requests\Admin\ChangePasswordApiRequest;
 use App\Mail\MailService;
 use App\Models\User;
 use App\Notifications\SendSMSNotification;
 use App\Repositories\UserRepository;
 use Carbon\Carbon;
-use Illuminate\Support\Facades\Crypt;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Str;
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Str;
 use Prettus\Validator\Exceptions\ValidatorException;
 use Spatie\Permission\Models\Role;
 
 class AuthController extends AppBaseController
 {
     /**
-     * @var  UserRepository
+     * @var UserRepository
      */
     private $userRepository;
 
     /**
-    * @param  UserRepository $userRepository
-    */
+     * @param UserRepository $userRepository
+     */
     public function __construct(UserRepository $userRepository)
     {
         $this->userRepository = $userRepository;
     }
 
     /**
-     * @param  RegisterAPIRequest $request
+     * @param RegisterAPIRequest $request
      *
-     * @throws  ValidatorException
-     * @return  JsonResponse
+     * @throws ValidatorException
+     *
+     * @return JsonResponse
      */
     public function register(RegisterAPIRequest $request): JsonResponse
     {
@@ -55,36 +56,36 @@ class AuthController extends AppBaseController
         if (isset($input['password'])) {
             $input['password'] = Hash::make($input['password']);
         }
-        $input["user_type"] = User::TYPE_ADMIN;
+        $input['user_type'] = User::TYPE_ADMIN;
 
-        /** @var  User $user */
+        /** @var User $user */
         $user = $this->userRepository->create($input);
         $data['username'] = $user->username;
         $data['link'] = URL::to('email/verify/'.Crypt::encrypt($user->email));
 
         $userRole = Role::find($input['role']);
         $user->assignRole($userRole);
-        
+
         Mail::to($user->email)
             ->send(new MailService('emails.verify_email',
             'Verify Email Address',
             $data));
-        
+
         return $this->successResponse($user);
     }
 
     /**
-     * @param  LoginAPIRequest $request
+     * @param LoginAPIRequest $request
      *
-     * @throws  LoginFailedException
-     * @throws  LoginUnAuthorizeException
+     * @throws LoginFailedException
+     * @throws LoginUnAuthorizeException
      *
-     * @return  JsonResponse
+     * @return JsonResponse
      */
     public function login(LoginAPIRequest $request): JsonResponse
     {
         $input = $request->all();
-        /** @var  User $user */
+        /** @var User $user */
         $user = User::where('username', $input['username'])->first();
         if (empty($user)) {
             $user = User::where('email', $input['username'])->first();
@@ -94,11 +95,11 @@ class AuthController extends AppBaseController
             throw new LoginFailedException('User not exists.');
         }
 
-        if (! $user->email_verified_at) {
+        if (!$user->email_verified_at) {
             throw new LoginUnAuthorizeException('Your account is not verified.');
         }
 
-        if (! $user->is_active) {
+        if (!$user->is_active) {
             throw new LoginUnAuthorizeException('Your account is deactivated. please contact your administrator.');
         }
 
@@ -108,7 +109,7 @@ class AuthController extends AppBaseController
                 $expireTime = Carbon::now()->addMinutes(User::LOGIN_REACTIVE_TIME)->toISOString();
                 $user->update([
                     'login_reactive_time' => $expireTime,
-                    'login_retry_limit'   => $user->login_retry_limit + 1
+                    'login_retry_limit' => $user->login_retry_limit + 1,
                 ]);
                 throw new LoginFailedException('you have exceed the number of limit.you can login after '.User::LOGIN_REACTIVE_TIME.' minutes.');
             }
@@ -118,7 +119,7 @@ class AuthController extends AppBaseController
                 $expireTime = Carbon::now()->addMinutes(User::LOGIN_REACTIVE_TIME)->toISOString();
                 $user->update([
                     'login_reactive_time' => $expireTime,
-                    'login_retry_limit'   => $user->login_retry_limit + 1
+                    'login_retry_limit' => $user->login_retry_limit + 1,
                 ]);
 
                 throw new LoginFailedException('you have exceed the number of limit.you can login after '.User::LOGIN_REACTIVE_TIME.' minutes.');
@@ -127,18 +128,18 @@ class AuthController extends AppBaseController
 
         if (!Hash::check($input['password'], $user->password)) {
             $user->update([
-                'login_retry_limit' => $user->login_retry_limit + 1
+                'login_retry_limit' => $user->login_retry_limit + 1,
             ]);
             throw new LoginFailedException('Password is incorrect.');
         }
 
         $roles = $user->getRoleNames();
-        if(!$roles->count()){
+        if (!$roles->count()) {
             throw new LoginFailedException('You have not assigned any role.');
         }
 
-        if ($roles->first() != User::DEFAULT_ROLE) {
-            if (is_null($user->user_type)){
+        if (User::DEFAULT_ROLE != $roles->first()) {
+            if (is_null($user->user_type)) {
                 throw new LoginFailedException('You have not assigned any user type.');
             }
 
@@ -146,43 +147,43 @@ class AuthController extends AppBaseController
                 throw new LoginFailedException('you are unable to access this platform.');
             }
         }
- 
+
         $data = $user->toArray();
         $data['token'] = $user->createToken('Admin Login')->plainTextToken;
 
         $user->update([
-        'login_reactive_time' => null,
-        'login_retry_limit'   => 0
+            'login_reactive_time' => null,
+            'login_retry_limit' => 0,
         ]);
 
         return $this->loginSuccess($data);
     }
 
-
     /**
-     * Logout auth user
+     * Logout auth user.
      *
-     * @return  JsonResponse
+     * @return JsonResponse
      */
     public function logout(): JsonResponse
     {
         Auth::user()->currentAccessToken()->delete();
-        
+
         return $this->successResponse('Logout successfully.');
     }
 
     /**
-     * This function send reset password mail or sms
+     * This function send reset password mail or sms.
      *
-     * @param  ForgotPasswordAPIRequest $request
+     * @param ForgotPasswordAPIRequest $request
      *
-     * @throws  FailureResponseException
-     * @return  JsonResponse
+     * @throws FailureResponseException
+     *
+     * @return JsonResponse
      */
     public function forgotPassword(ForgotPasswordAPIRequest $request): JsonResponse
     {
         $input = $request->all();
-        /** @var  User $user */
+        /** @var User $user */
         $user = User::where('email', $input['email'])->firstOrFail();
 
         $resultOfEmail = false;
@@ -198,9 +199,9 @@ class AuthController extends AppBaseController
 
         if ($resultOfEmail && $resultOfSMS) {
             return $this->successResponse('otp successfully send.');
-        } else if ($resultOfEmail && !$resultOfSMS) {
+        } elseif ($resultOfEmail && !$resultOfSMS) {
             return $this->successResponse('otp successfully send to your email.');
-        } else if (!$resultOfEmail && $resultOfSMS) {
+        } elseif (!$resultOfEmail && $resultOfSMS) {
             return $this->successResponse('otp successfully send to your mobile number.');
         } else {
             throw new FailureResponseException('otp can not be sent due to some issue try again later.');
@@ -210,14 +211,14 @@ class AuthController extends AppBaseController
     /**
      * This function will send reset password email to given user.
      *
-     * @param  ResetPasswordAPIRequest $request
+     * @param ResetPasswordAPIRequest $request
      *
-     * @return  JsonResponse
+     * @return JsonResponse
      */
     public function resetPassword(ResetPasswordAPIRequest $request): JsonResponse
     {
         $input = $request->all();
-        /** @var  User $user */
+        /** @var User $user */
         $user = User::where('reset_password_code', $input['code'])->first();
         if ($user && $user->reset_password_expire_time) {
             if (Carbon::now()->isAfter($user->reset_password_expire_time)) {
@@ -228,10 +229,10 @@ class AuthController extends AppBaseController
         }
 
         $user->update([
-            'password'                   => Hash::make($input['new_password']),
+            'password' => Hash::make($input['new_password']),
             'reset_password_expire_time' => null,
-            'login_retry_limit'          => 0,
-            'reset_password_code'        => null
+            'login_retry_limit' => 0,
+            'reset_password_code' => null,
         ]);
 
         $data['username'] = $user->username;
@@ -245,14 +246,14 @@ class AuthController extends AppBaseController
     }
 
     /**
-     * @param  ValidateResetPasswordOtpApiRequest $request
+     * @param ValidateResetPasswordOtpApiRequest $request
      *
-     * @return  JsonResponse
+     * @return JsonResponse
      */
     public function validateResetPasswordOtp(ValidateResetPasswordOtpApiRequest $request): JsonResponse
     {
         $input = $request->all();
-        /** @var  User $user */
+        /** @var User $user */
         $user = User::where('reset_password_code', $input['otp'])->first();
         if (!$user || !$user->reset_password_expire_time) {
             return $this->errorResponse('Invalid OTP.');
@@ -267,17 +268,17 @@ class AuthController extends AppBaseController
     }
 
     /**
-     * @param  $user
-     * @param  string $code
+     * @param        $user
+     * @param string $code
      *
-     * @return  bool
+     * @return bool
      */
-    public function sendEmailForResetPasswordLink($user,string $code): bool
+    public function sendEmailForResetPasswordLink($user, string $code): bool
     {
         $expireTime = Carbon::now()->addMinutes(User::FORGOT_PASSWORD_WITH['expire_time'])->toISOString();
         $user->update([
             'reset_password_expire_time' => $expireTime,
-            'reset_password_code'        => $code
+            'reset_password_code' => $code,
         ]);
 
         // mail send code
@@ -293,40 +294,41 @@ class AuthController extends AppBaseController
     }
 
     /**
-     * @param  $user
-     * @param  string $code
+     * @param        $user
+     * @param string $code
      *
-     * @return  bool
+     * @return bool
      */
-    public function sendSMSForResetPasswordLink($user,string $code): bool
+    public function sendSMSForResetPasswordLink($user, string $code): bool
     {
         $expireTime = Carbon::now()->addMinutes(User::FORGOT_PASSWORD_WITH['expire_time'])->toISOString();
         $user->update([
             'reset_password_expire_time' => $expireTime,
-            'reset_password_code'        => $code
+            'reset_password_code' => $code,
         ]);
 
         // sms send code
         $user->notify(new SendSMSNotification());
-        
+
         return true;
     }
 
     /**
      * Change password of logged in user.
      *
-     * @param  ChangePasswordApiRequest $request
+     * @param ChangePasswordApiRequest $request
      *
-     * @throws  ChangePasswordFailureException
-     * @return  JsonResponse
+     * @throws ChangePasswordFailureException
+     *
+     * @return JsonResponse
      */
     public function changePassword(ChangePasswordApiRequest $request): JsonResponse
     {
         $input = $request->all();
 
-        /** @var  User $user */
+        /** @var User $user */
         $user = Auth::user();
-        if (!Hash::check($input['old_password'],  $user->password)) {
+        if (!Hash::check($input['old_password'], $user->password)) {
             throw new ChangePasswordFailureException('Current password is invalid.');
         }
         $input['password'] = Hash::make($input['new_password']);
@@ -338,7 +340,7 @@ class AuthController extends AppBaseController
     /**
      * Generate unique code to reset password of given user.
      *
-     * @return  string
+     * @return string
      */
     public function generateCode(): string
     {
@@ -353,5 +355,4 @@ class AuthController extends AppBaseController
 
         return $code;
     }
-
 }

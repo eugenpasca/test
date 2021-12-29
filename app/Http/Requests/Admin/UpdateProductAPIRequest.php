@@ -7,23 +7,23 @@ use Illuminate\Foundation\Http\FormRequest;
 class UpdateProductAPIRequest extends FormRequest
 {
     /**
-    * @return  bool
-    */
+     * @return bool
+     */
     public function authorize(): bool
     {
         return true;
     }
 
     /**
-    * @return  array
-    */
+     * @return array
+     */
     public function rules(): array
     {
         return [
-            'name' => ['nullable','string'],
-            'price' => ['nullable','integer'],
-            'description' => ['nullable','string'],
+            'name' => ['nullable', 'string'],
+            'price' => ['nullable', 'integer'],
+            'description' => ['nullable', 'string'],
             'is_active' => ['boolean'],
-         ];
+        ];
     }
 }

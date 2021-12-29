@@ -11,12 +11,12 @@ use Illuminate\Http\Request;
 class PermissionController extends AppBaseController
 {
     /**
-     * @var  PermissionRepository 
+     * @var PermissionRepository
      */
     private $permissionRepository;
 
     /**
-     * @param  PermissionRepository $permissionRepository
+     * @param PermissionRepository $permissionRepository
      */
     public function __construct(PermissionRepository $permissionRepository)
     {
@@ -24,12 +24,12 @@ class PermissionController extends AppBaseController
     }
 
     /**
-    * Return lists of permissions.
-    *
-    * @param  Request $request
-    *
-    * @return  PermissionCollection
-    */
+     * Return lists of permissions.
+     *
+     * @param Request $request
+     *
+     * @return PermissionCollection
+     */
     public function index(Request $request): PermissionCollection
     {
         $permissions = $this->permissionRepository->fetch($request);
@@ -38,12 +38,12 @@ class PermissionController extends AppBaseController
     }
 
     /**
-    * Return permission with given ID.
-    *
-    * @param  int $id
-    *
-    * @return  PermissionResource
-    */
+     * Return permission with given ID.
+     *
+     * @param int $id
+     *
+     * @return PermissionResource
+     */
     public function show(int $id): PermissionResource
     {
         $permission = $this->permissionRepository->findOrFail($id);

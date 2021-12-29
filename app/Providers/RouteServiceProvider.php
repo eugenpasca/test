@@ -49,7 +49,9 @@ class RouteServiceProvider extends ServiceProvider
 
             $this->adminRoutes();
 
-            $this->deviceRoutes();
+            $this->desktopRoutes();
+
+            $this->clientRoutes();
 
         });
     }
@@ -62,12 +64,20 @@ class RouteServiceProvider extends ServiceProvider
         ->group(base_path('routes/admin.php'));
     }
     
-    public function deviceRoutes() 
+    public function desktopRoutes() 
     {
-        Route::prefix('api/device')
+        Route::prefix('api/desktop')
         ->middleware('api')
         ->namespace($this->namespace)
-        ->group(base_path('routes/device.php'));
+        ->group(base_path('routes/desktop.php'));
+    }
+    
+    public function clientRoutes() 
+    {
+        Route::prefix('api/client')
+        ->middleware('api')
+        ->namespace($this->namespace)
+        ->group(base_path('routes/client.php'));
     }
     
 

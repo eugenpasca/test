@@ -5,7 +5,7 @@ namespace App\Observers;
 use Illuminate\Support\Facades\Auth;
 
 /**
- * Class RecordOwnerObserver
+ * Class RecordOwnerObserver.
  */
 class RecordOwnerObserver
 {

@@ -11,11 +11,11 @@ use Throwable;
 class UnAuthorizedRequestException extends Exception
 {
     /**
-     * @param string $message
-     * @param int $code
+     * @param string         $message
+     * @param int            $code
      * @param Throwable|null $previous
      */
-    public function __construct($message = "", $code = Response::HTTP_UNAUTHORIZED, Throwable $previous = null)
+    public function __construct($message = '', $code = Response::HTTP_UNAUTHORIZED, Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }

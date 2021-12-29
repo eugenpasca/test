@@ -8,10 +8,10 @@ use Illuminate\Http\Resources\Json\ResourceCollection;
 class RoleCollection extends ResourceCollection
 {
     /**
-    * @param  Request $request
-    *
-    * @return  array
-    */
+     * @param Request $request
+     *
+     * @return array
+     */
     public function toArray($request): array
     {
         return [

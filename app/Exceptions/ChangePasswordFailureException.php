@@ -11,11 +11,11 @@ use Throwable;
 class ChangePasswordFailureException extends Exception
 {
     /**
-     * @param string $message
-     * @param int $code
+     * @param string         $message
+     * @param int            $code
      * @param Throwable|null $previous
      */
-    public function __construct($message = "", $code = Response::HTTP_FORBIDDEN, Throwable $previous = null)
+    public function __construct($message = '', $code = Response::HTTP_FORBIDDEN, Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }
@@ -27,7 +27,7 @@ class ChangePasswordFailureException extends Exception
     {
         return response()->json(ResponseUtil::generateError(
             'FAILURE',
-            "Password cannot be changed due to ".$this->getMessage(),
+            'Password cannot be changed due to '.$this->getMessage(),
             []
         ), $this->getCode());
     }

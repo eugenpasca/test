@@ -7,21 +7,21 @@ use Illuminate\Foundation\Http\FormRequest;
 class BulkCreateUserRoleAPIRequest extends FormRequest
 {
     /**
-    * @return  bool
-    */
+     * @return bool
+     */
     public function authorize(): bool
     {
         return true;
     }
 
     /**
-    * @return  array
-    */
+     * @return array
+     */
     public function rules(): array
     {
         return [
-            'data.*.user_id' => ['integer','required'],
-            'data.*.role_id' => ['integer','required'],
+            'data.*.user_id' => ['integer', 'required'],
+            'data.*.role_id' => ['integer', 'required'],
         ];
     }
 }

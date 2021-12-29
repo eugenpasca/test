@@ -7,20 +7,20 @@ use Illuminate\Foundation\Http\FormRequest;
 class BulkUpdateRoleAPIRequest extends FormRequest
 {
     /**
-    * @return  bool
-    */
+     * @return bool
+     */
     public function authorize(): bool
     {
         return true;
     }
 
     /**
-    * @return  array
-    */
+     * @return array
+     */
     public function rules(): array
     {
         return [
-            'data.*.name' => ['required','unique:roles,name,'.$this->route("role")],
+            'data.*.name' => ['required', 'unique:roles,name,'.$this->route('role')],
         ];
     }
 }

@@ -24,7 +24,7 @@ class JSONApiFilterCriteria implements CriteriaInterface
         $searchableFields = $repository->getFieldsSearchable();
 
         $relationshipFilters = [];
-        if (request()->get('filter') !== null) {
+        if (null !== request()->get('filter')) {
             foreach (request()->get('filter') as $key => $filter) {
                 if (Str::contains($key, '.')) {
                     $relationshipFilters[] = $key;

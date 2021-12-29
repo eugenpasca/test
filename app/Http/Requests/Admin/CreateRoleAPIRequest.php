@@ -7,20 +7,20 @@ use Illuminate\Foundation\Http\FormRequest;
 class CreateRoleAPIRequest extends FormRequest
 {
     /**
-    * @return  bool
-    */
+     * @return bool
+     */
     public function authorize(): bool
     {
         return true;
     }
 
     /**
-    * @return  array
-    */
+     * @return array
+     */
     public function rules(): array
     {
         return [
-            'name' => ['required','unique:roles,name'],
+            'name' => ['required', 'unique:roles,name'],
         ];
     }
 }

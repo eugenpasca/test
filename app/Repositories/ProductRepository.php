@@ -7,8 +7,8 @@ use App\Models\Product;
 class ProductRepository extends BaseRepository
 {
     /**
-    * @var  string[]
-    */
+     * @var string[]
+     */
     protected $fieldSearchable = [
         'id',
         'name',
@@ -23,27 +23,26 @@ class ProductRepository extends BaseRepository
     ];
 
     /**
-    * @return  string[]
-    */
+     * @return string[]
+     */
     public function getFieldsSearchable(): array
     {
         return $this->fieldSearchable;
     }
 
     /**
-    * @return  string
-    */
+     * @return string
+     */
     public function model(): string
     {
         return Product::class;
     }
 
-
     /**
-     * @return  string[]
+     * @return string[]
      */
     public function getAvailableRelations(): array
     {
-       return ['addedByUser','updatedByUser'];
+        return ['addedByUser', 'updatedByUser'];
     }
 }

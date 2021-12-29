@@ -8,17 +8,17 @@ use Illuminate\Http\Request;
 class RoleResource extends BaseAPIResource
 {
     /**
-    * @param  Request $request
-    *
-    * @return  array
-    */
+     * @param Request $request
+     *
+     * @return array
+     */
     public function toArray($request): array
     {
-        $fieldsFilter = $request->get('fields'); 
-        if(!empty($fieldsFilter) || $request->get('include')) {
-            return $this->resource->toArray(); 
+        $fieldsFilter = $request->get('fields');
+        if (!empty($fieldsFilter) || $request->get('include')) {
+            return $this->resource->toArray();
         }
-        
+
         return [
             'id' => $this->id,
             'name' => $this->name,
@@ -28,5 +28,4 @@ class RoleResource extends BaseAPIResource
             'permissions' => $this->permissions,
         ];
     }
-
 }
