@@ -58,9 +58,9 @@ class DefaultUserSeeder extends Seeder
             'is_active' => $faker->boolean(true),
             'created_at' => $faker->dateTime(),
             'updated_at' => $faker->dateTime(),
-            'username' => 'amcclure',
-            'email' => 'sabryna85@hotmail.com',
-            'password' => Hash::make('Vtp[vO'),
+            'username' => 'emerson64',
+            'email' => 'mayer.maci@roberts.com',
+            'password' => Hash::make('T]u:UoYo(^'),
             'email_verified_at' => Carbon::now(),
             'user_type' => User::TYPE_ADMIN
         ];

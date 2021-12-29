@@ -5,24 +5,24 @@ namespace App\Http\Resources;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 /**
- * Class BaseAPIResource
+ * Class BaseAPIResource.
  */
 class BaseAPIResource extends JsonResource
 {
     public static $action;
-    
-    const INDEX = 1;
-    const STORE = 2;
-    const UPDATE = 3;
-    const BULK_STORE = 4;
-    const BULK_UPDATE = 5;
+
+    public const INDEX = 1;
+    public const STORE = 2;
+    public const UPDATE = 3;
+    public const BULK_STORE = 4;
+    public const BULK_UPDATE = 5;
 
     /**
      * @param $action
      */
     public static function setAction($action)
     {
-          self::$action = $action;
+        self::$action = $action;
     }
 
     /**
@@ -32,17 +32,17 @@ class BaseAPIResource extends JsonResource
     {
         return self::$action;
     }
-    
+
     public static function isUsingIndex()
     {
         self::setAction(self::INDEX);
     }
-    
+
     public static function isUsingStore()
     {
         self::setAction(self::STORE);
     }
-    
+
     public static function isUsingUpdate()
     {
         self::setAction(self::UPDATE);
@@ -52,7 +52,7 @@ class BaseAPIResource extends JsonResource
     {
         self::setAction(self::BULK_STORE);
     }
-    
+
     public static function isUsingBulkUpdate()
     {
         self::setAction(self::BULK_UPDATE);

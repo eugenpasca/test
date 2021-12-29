@@ -13,17 +13,21 @@ use Spatie\Permission\Traits\HasRoles;
 
 class User extends Authenticatable implements HasMedia
 {
-    use HasApiTokens, HasFactory, Notifiable, HasRoles, InteractsWithMedia;
+    use HasApiTokens;
+    use HasFactory;
+    use Notifiable;
+    use HasRoles;
+    use InteractsWithMedia;
     use HasRecordOwnerProperties;
 
     /**
-    * @var  string
-    */
+     * @var string
+     */
     protected $table = 'users';
 
     /**
-    * @var  string[]
-    */
+     * @var string[]
+     */
     protected $fillable = [
         'username',
         'password',
@@ -44,16 +48,16 @@ class User extends Authenticatable implements HasMedia
     ];
 
     /**
-    * @var  string[]
-    */
+     * @var string[]
+     */
     protected $hidden = [
         'password',
         'remember_token',
     ];
 
     /**
-    * @var  string[]
-    */
+     * @var string[]
+     */
     protected $casts = [
         'username' => 'string',
         'password' => 'string',
@@ -70,47 +74,45 @@ class User extends Authenticatable implements HasMedia
         'user_type' => 'integer',
     ];
 
-    const DEFAULT_ROLE = 'System User';
-    
-    const TYPE_USER = 1;
-    const TYPE_ADMIN = 2;
-    
-    const USER_TYPE = [
+    public const DEFAULT_ROLE = 'System User';
+
+    public const TYPE_USER = 1;
+    public const TYPE_ADMIN = 2;
+
+    public const USER_TYPE = [
         self::TYPE_USER => 'User',
-        self::TYPE_ADMIN => 'Admin'
+        self::TYPE_ADMIN => 'Admin',
     ];
 
-    const PLATFORM = [
+    public const PLATFORM = [
         'ADMIN' => 1,
-        'DEVICE' => 2,
+        'DESKTOP' => 2,
+        'CLIENT' => 3,
     ];
 
-    const USER_ROLE = [
+    public const USER_ROLE = [
         'USER' => 1,
         'ADMIN' => 2,
     ];
 
-    const MAX_LOGIN_RETRY_LIMIT = 3;
-    const LOGIN_REACTIVE_TIME = 20;
+    public const MAX_LOGIN_RETRY_LIMIT = 3;
+    public const LOGIN_REACTIVE_TIME = 20;
 
-    const FORGOT_PASSWORD_WITH = [
-        'link'        => [
+    public const FORGOT_PASSWORD_WITH = [
+        'link' => [
             'email' => 'true',
-            'sms'   => 'false',
+            'sms' => 'false',
         ],
         'expire_time' => '20',
     ];
-    
-    const LOGIN_ACCESS = [
-        'User' => [self::PLATFORM['DEVICE'],],
-        'Admin' => [self::PLATFORM['ADMIN'],],
-    ];   
+
+    public const LOGIN_ACCESS = [
+        'User' => [self::PLATFORM['ADMIN']],
+        'Admin' => [self::PLATFORM['ADMIN']],
+    ];
 
     public function routeNotificationForNexmo($notification)
     {
         return $this->phone_number; // e.g "91909945XXXX"
     }
- 
-
-
 }

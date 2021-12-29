@@ -28,4 +28,3 @@ Route::get('email/verify/{token}', function (Illuminate\Http\Request $request) {
 
     return response()->json(['success' => 'Email verified successfully']);
 });
-

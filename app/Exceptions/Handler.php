@@ -22,7 +22,6 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        //
     ];
 
     /**
@@ -44,7 +43,6 @@ class Handler extends ExceptionHandler
     public function register()
     {
         $this->reportable(function (Throwable $e) {
-            //
         });
     }
 
@@ -69,10 +67,11 @@ class Handler extends ExceptionHandler
     }
 
     /**
-     * @param Request $request
+     * @param Request   $request
      * @param Throwable $e
      *
      * @throws Throwable
+     *
      * @return JsonResponse|Response|ResponseAlias
      */
     public function render($request, Throwable $e)
@@ -111,12 +110,12 @@ class Handler extends ExceptionHandler
                 'Not Found',
             ), ResponseAlias::HTTP_NOT_FOUND);
         }
-        
+
         if ($request->expectsJson() && !in_array(get_class($e), $this->customExceptions())) {
             return response()->json([
-                'STATUS'  => ResponseAlias::HTTP_UNPROCESSABLE_ENTITY,
+                'STATUS' => ResponseAlias::HTTP_UNPROCESSABLE_ENTITY,
                 'MESSAGE' => $e->getMessage(),
-                'ERROR'   => $e->getMessage(),
+                'ERROR' => $e->getMessage(),
             ], ResponseAlias::HTTP_UNPROCESSABLE_ENTITY);
         }
 

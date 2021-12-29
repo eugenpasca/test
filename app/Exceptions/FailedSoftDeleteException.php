@@ -11,11 +11,11 @@ use Throwable;
 class FailedSoftDeleteException extends Exception
 {
     /**
-     * @param string $message
-     * @param int $code
+     * @param string         $message
+     * @param int            $code
      * @param Throwable|null $previous
      */
-    public function __construct($message = "", $code = Response::HTTP_INTERNAL_SERVER_ERROR, Throwable $previous = null)
+    public function __construct($message = '', $code = Response::HTTP_INTERNAL_SERVER_ERROR, Throwable $previous = null)
     {
         parent::__construct($message, $code, $previous);
     }

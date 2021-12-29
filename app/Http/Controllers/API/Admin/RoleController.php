@@ -11,8 +11,8 @@ use App\Http\Resources\Admin\RoleCollection;
 use App\Http\Resources\Admin\RoleResource;
 use App\Repositories\RoleRepository;
 use Exception;
-use Illuminate\Http\Request;
 use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Request;
 use Prettus\Validator\Exceptions\ValidatorException;
 
 class RoleController extends AppBaseController
@@ -25,12 +25,12 @@ class RoleController extends AppBaseController
     }
 
     /**
-    * Return Lists of roles.
-    *
-    * @param  Request $request
-    *
-    * @return  RoleCollection
-    */
+     * Return Lists of roles.
+     *
+     * @param Request $request
+     *
+     * @return RoleCollection
+     */
     public function index(Request $request): RoleCollection
     {
         $roles = $this->roleRepository->fetch($request);
@@ -39,20 +39,21 @@ class RoleController extends AppBaseController
     }
 
     /**
-    * Create new roles with given permissions.
-    *
-    * @param  CreateRoleAPIRequest $request
-    *
-    * @throws  ValidatorException
-    * @return  RoleResource
-    */
+     * Create new roles with given permissions.
+     *
+     * @param CreateRoleAPIRequest $request
+     *
+     * @throws ValidatorException
+     *
+     * @return RoleResource
+     */
     public function store(CreateRoleAPIRequest $request): RoleResource
     {
         $input = $request->all();
         $input['guard_name'] = 'web';
         $role = $this->roleRepository->create($input);
 
-        if (isset($input['permissions']) && ! empty($input['permissions'])) {
+        if (isset($input['permissions']) && !empty($input['permissions'])) {
             $role->syncPermissions($input['permissions']);
         }
 
@@ -60,12 +61,12 @@ class RoleController extends AppBaseController
     }
 
     /**
-    * Return role with given ID.
-    *
-    * @param  int $id
-    *
-    * @return  RoleResource
-    */
+     * Return role with given ID.
+     *
+     * @param int $id
+     *
+     * @return RoleResource
+     */
     public function show(int $id): RoleResource
     {
         $role = $this->roleRepository->findOrFail($id);
@@ -74,21 +75,22 @@ class RoleController extends AppBaseController
     }
 
     /**
-    * Update role with given payload.
-    *
-    * @param  UpdateRoleAPIRequest $request
-    * @param  int $id
-    *
-    * @throws  ValidatorException
-    * @return  RoleResource
-    */
-    public function update(UpdateRoleAPIRequest $request,int $id): RoleResource
+     * Update role with given payload.
+     *
+     * @param UpdateRoleAPIRequest $request
+     * @param int                  $id
+     *
+     * @throws ValidatorException
+     *
+     * @return RoleResource
+     */
+    public function update(UpdateRoleAPIRequest $request, int $id): RoleResource
     {
         $input = $request->all();
         $input['guard_name'] = 'web';
-        $role = $this->roleRepository->update($input,$id);
+        $role = $this->roleRepository->update($input, $id);
 
-        if (isset($input['permissions']) && ! empty($input['permissions'])) {
+        if (isset($input['permissions']) && !empty($input['permissions'])) {
             $role->syncPermissions($input['permissions']);
         }
 
@@ -96,13 +98,14 @@ class RoleController extends AppBaseController
     }
 
     /**
-    * Delete role with given ID.
-    *
-    * @param  int $id
-    *
-    * @throws  Exception
-    * @return  JsonResponse
-    */
+     * Delete role with given ID.
+     *
+     * @param int $id
+     *
+     * @throws Exception
+     *
+     * @return JsonResponse
+     */
     public function delete(int $id): JsonResponse
     {
         $this->roleRepository->delete($id);
@@ -111,13 +114,14 @@ class RoleController extends AppBaseController
     }
 
     /**
-    * Create multiple roles with related permissions.
-    *
-    * @param  BulkCreateRoleAPIRequest $request
-    *
-    * @throws  ValidatorException
-    * @return  RoleCollection
-    */
+     * Create multiple roles with related permissions.
+     *
+     * @param BulkCreateRoleAPIRequest $request
+     *
+     * @throws ValidatorException
+     *
+     * @return RoleCollection
+     */
     public function bulkStore(BulkCreateRoleAPIRequest $request): RoleCollection
     {
         $roles = collect();
@@ -126,7 +130,7 @@ class RoleController extends AppBaseController
         foreach ($input as $key => $roleInput) {
             $roleInput['guard_name'] = 'web';
             $roles[$key] = $this->roleRepository->create($roleInput);
-            if (isset($input['permissions']) && ! empty($input['permissions'])) {
+            if (isset($input['permissions']) && !empty($input['permissions'])) {
                 $roles[$key]->syncPermissions($roleInput['permissions']);
             }
         }
@@ -135,13 +139,14 @@ class RoleController extends AppBaseController
     }
 
     /**
-    * Update multiple roles with given payload.
-    *
-    * @param  BulkUpdateRoleAPIRequest $request
-    *
-    * @throws  ValidatorException
-    * @return  RoleCollection
-    */
+     * Update multiple roles with given payload.
+     *
+     * @param BulkUpdateRoleAPIRequest $request
+     *
+     * @throws ValidatorException
+     *
+     * @return RoleCollection
+     */
     public function bulkUpdate(BulkUpdateRoleAPIRequest $request): RoleCollection
     {
         $roles = collect();
@@ -149,8 +154,8 @@ class RoleController extends AppBaseController
         $input = $request->get('data');
         foreach ($input as $key => $roleInput) {
             $roleInput['guard_name'] = 'web';
-            $roles[$key] = $this->roleRepository->update($roleInput,$roleInput['id']);
-            if (isset($input['permissions']) && ! empty($input['permissions'])) {
+            $roles[$key] = $this->roleRepository->update($roleInput, $roleInput['id']);
+            if (isset($input['permissions']) && !empty($input['permissions'])) {
                 $roles[$key]->syncPermissions($roleInput['permissions']);
             }
         }

@@ -7,8 +7,8 @@ use App\Models\User;
 class UserRepository extends BaseRepository
 {
     /**
-    * @var  string[]
-    */
+     * @var string[]
+     */
     protected $fieldSearchable = [
         'id',
         'username',
@@ -23,27 +23,26 @@ class UserRepository extends BaseRepository
     ];
 
     /**
-    * @return  string[]
-    */
+     * @return string[]
+     */
     public function getFieldsSearchable(): array
     {
         return $this->fieldSearchable;
     }
 
     /**
-    * @return  string
-    */
+     * @return string
+     */
     public function model(): string
     {
         return User::class;
     }
 
-
     /**
-     * @return  string[]
+     * @return string[]
      */
     public function getAvailableRelations(): array
     {
-       return ['addedByUser','updatedByUser'];
+        return ['addedByUser', 'updatedByUser'];
     }
 }

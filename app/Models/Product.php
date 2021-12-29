@@ -3,21 +3,22 @@
 namespace App\Models;
 
 use App\Traits\HasRecordOwnerProperties;
-use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\Model as Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Product extends Model {
+class Product extends Model
+{
     use HasRecordOwnerProperties;
     use SoftDeletes;
 
     /**
-    * @var  string
-    */
+     * @var string
+     */
     protected $table = 'products';
 
     /**
-    * @var  string[]
-    */
+     * @var string[]
+     */
     protected $fillable = [
         'name',
         'price',
@@ -30,10 +31,9 @@ class Product extends Model {
         'deleted_at',
     ];
 
-
     /**
-    * @var  string[]
-    */
+     * @var string[]
+     */
     protected $casts = [
         'name' => 'string',
         'price' => 'double',
@@ -42,7 +42,4 @@ class Product extends Model {
         'added_by' => 'integer',
         'updated_by' => 'integer',
     ];
-
-
-
 }

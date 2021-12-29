@@ -6,15 +6,13 @@ use App\Repositories\Criteria\JSONApiAllowedFieldsCriteria;
 use App\Repositories\Criteria\JSONApiFilterCriteria;
 use App\Repositories\Criteria\JSONApiIncludeCriteria;
 use App\Repositories\Criteria\JSONApiSortingCriteria;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\Paginator;
 use Prettus\Repository\Eloquent\BaseRepository as PrettusBaseRepository;
-use Ramsey\Uuid\Uuid;
 
 abstract class BaseRepository extends PrettusBaseRepository
 {
     /**
-     * Get Searchable Fields
+     * Get Searchable Fields.
      *
      * @return array
      */
@@ -34,7 +32,7 @@ abstract class BaseRepository extends PrettusBaseRepository
         $this->pushCriteria(app(JSONApiAllowedFieldsCriteria::class));
         $this->pushCriteria(app(JSONApiIncludeCriteria::class));
 
-        Paginator::currentPageResolver(function() {
+        Paginator::currentPageResolver(function () {
             return request()->input('page.number', 1);
         });
     }

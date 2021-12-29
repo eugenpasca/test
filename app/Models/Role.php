@@ -12,6 +12,6 @@ class Role extends RoleModel
 
         parent::__construct($attributes);
     }
-    
+
     protected $with = ['permissions'];
 }

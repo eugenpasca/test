@@ -25,6 +25,11 @@
 "description": ""
 },
 {
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
 "key": "X-Requested-With",
 "value": "XMLHttpRequest",
 "type": "text"
@@ -32,7 +37,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n  \"name\": \"odio\", \n  \"price\": 3, \n  \"description\": \"ipsam\", \n  \"is_active\": false  \n}"
+"raw": "{\n  \"name\": \"sit\", \n  \"price\": 3, \n  \"description\": \"magnam\", \n  \"is_active\": true  \n}"
 },
 "description": ""
 },
@@ -49,7 +54,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"name\": \"sapiente\", \n    \"price\": 3, \n    \"description\": \"et\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"deleted_at\": \"2021-12-29 23:16:45\"  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"name\": \"reprehenderit\", \n    \"price\": 3, \n    \"description\": \"nobis\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"deleted_at\": \"2021-12-29 23:22:20\"  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -72,6 +77,11 @@
 "key": "Content-Type",
 "value": "application/json",
 "description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
 },
 {
 "key": "X-Requested-With",
@@ -98,7 +108,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"name\": \"sapiente\", \n    \"price\": 3, \n    \"description\": \"et\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"deleted_at\": \"2021-12-29 23:16:45\"  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"name\": \"reprehenderit\", \n    \"price\": 3, \n    \"description\": \"nobis\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"deleted_at\": \"2021-12-29 23:22:20\"  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -180,6 +190,11 @@
 "description": ""
 },
 {
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
 "key": "X-Requested-With",
 "value": "XMLHttpRequest",
 "type": "text"
@@ -204,7 +219,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\":[\n\t\t{\n\t\t\t\"id\": 4, \n\t\t\t\"name\": \"sapiente\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"et\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"updated_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:16:45\"  \n\t\t}\n\t]\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\":[\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"name\": \"reprehenderit\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"nobis\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:22:20\"  \n\t\t}\n\t]\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -229,6 +244,11 @@
 "description": ""
 },
 {
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
 "key": "X-Requested-With",
 "value": "XMLHttpRequest",
 "type": "text"
@@ -236,7 +256,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n  \"name\": \"odio\", \n  \"price\": 3, \n  \"description\": \"ipsam\", \n  \"is_active\": false  \n}"
+"raw": "{\n  \"name\": \"sit\", \n  \"price\": 3, \n  \"description\": \"magnam\", \n  \"is_active\": true  \n}"
 },
 "description": ""
 },
@@ -253,7 +273,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"name\": \"sapiente\", \n    \"price\": 3, \n    \"description\": \"et\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"deleted_at\": \"2021-12-29 23:16:45\"  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"name\": \"reprehenderit\", \n    \"price\": 3, \n    \"description\": \"nobis\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"deleted_at\": \"2021-12-29 23:22:20\"  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -276,6 +296,11 @@
 "key": "Content-Type",
 "value": "application/json",
 "description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
 },
 {
 "key": "X-Requested-With",
@@ -327,6 +352,11 @@
 "description": ""
 },
 {
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
 "key": "X-Requested-With",
 "value": "XMLHttpRequest",
 "type": "text"
@@ -334,7 +364,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n\t\"data\": [\n\t{\n\t\t\"name\": \"odio\", \n\t\t\"price\": 3, \n\t\t\"description\": \"ipsam\", \n\t\t\"is_active\": false  \n\t}, \n\t{\n\t\t\"name\": \"odio\", \n\t\t\"price\": 3, \n\t\t\"description\": \"ipsam\", \n\t\t\"is_active\": false  \n\t}\n\t]\n}" },
+"raw": "{\n\t\"data\": [\n\t{\n\t\t\"name\": \"sit\", \n\t\t\"price\": 3, \n\t\t\"description\": \"magnam\", \n\t\t\"is_active\": true  \n\t}, \n\t{\n\t\t\"name\": \"sit\", \n\t\t\"price\": 3, \n\t\t\"description\": \"magnam\", \n\t\t\"is_active\": true  \n\t}\n\t]\n}" },
 "description": ""
 },
 "response": [
@@ -350,7 +380,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 4, \n\t\t\t\"name\": \"sapiente\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"et\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"updated_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:16:45\"  \n\t\t}\n\t]\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"name\": \"reprehenderit\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"nobis\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:22:20\"  \n\t\t}\n\t]\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -375,6 +405,11 @@
 "description": ""
 },
 {
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
 "key": "X-Requested-With",
 "value": "XMLHttpRequest",
 "type": "text"
@@ -382,7 +417,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n\t\"data\": [\n\t{\n\t\t\"id\": 1,\n\t\t\"name\": \"odio\", \n\t\t\"price\": 3, \n\t\t\"description\": \"ipsam\", \n\t\t\"is_active\": false  \n\t}, \n\t{\n\t\t\"id\": 2,\n\t\t\"name\": \"odio\", \n\t\t\"price\": 3, \n\t\t\"description\": \"ipsam\", \n\t\t\"is_active\": false  \n\t}\n\t]\n}" },
+"raw": "{\n\t\"data\": [\n\t{\n\t\t\"id\": 1,\n\t\t\"name\": \"sit\", \n\t\t\"price\": 3, \n\t\t\"description\": \"magnam\", \n\t\t\"is_active\": true  \n\t}, \n\t{\n\t\t\"id\": 2,\n\t\t\"name\": \"sit\", \n\t\t\"price\": 3, \n\t\t\"description\": \"magnam\", \n\t\t\"is_active\": true  \n\t}\n\t]\n}" },
 "description": ""
 },
 "response": [
@@ -398,7 +433,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 4, \n\t\t\t\"name\": \"sapiente\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"et\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"updated_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:16:45\"  \n\t\t}\n\t]\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"name\": \"reprehenderit\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"nobis\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:22:20\"  \n\t\t}\n\t]\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -421,6 +456,11 @@
 "key": "Content-Type",
 "value": "application/json",
 "description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
 },
 {
 "key": "X-Requested-With",
@@ -477,6 +517,11 @@
 "description": ""
 },
 {
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
 "key": "X-Requested-With",
 "value": "XMLHttpRequest",
 "type": "text"
@@ -484,7 +529,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n  \"username\": \"atque\", \n  \"password\": \"et\", \n  \"email\": \"culpa\", \n  \"name\": \"nihil\", \n  \"email_verified_at\": \"2021-12-29 23:16:45\", \n  \"is_active\": false, \n  \"user_type\": 1  \n}"
+"raw": "{\n  \"username\": \"quibusdam\", \n  \"password\": \"et\", \n  \"email\": \"harum\", \n  \"name\": \"labore\", \n  \"email_verified_at\": \"2021-12-29 23:22:20\", \n  \"is_active\": true, \n  \"user_type\": 1  \n}"
 },
 "description": ""
 },
@@ -501,7 +546,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"username\": \"eum\", \n    \"email\": \"deleniti\", \n    \"name\": \"dolor\", \n    \"email_verified_at\": \"2021-12-29 23:16:45\", \n    \"is_active\": false, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"user_type\": 1  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"username\": \"reiciendis\", \n    \"email\": \"nihil\", \n    \"name\": \"provident\", \n    \"email_verified_at\": \"2021-12-29 23:22:20\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"user_type\": 1  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -524,6 +569,11 @@
 "key": "Content-Type",
 "value": "application/json",
 "description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
 },
 {
 "key": "X-Requested-With",
@@ -550,7 +600,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"username\": \"eum\", \n    \"email\": \"deleniti\", \n    \"name\": \"dolor\", \n    \"email_verified_at\": \"2021-12-29 23:16:45\", \n    \"is_active\": false, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"user_type\": 1  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"username\": \"reiciendis\", \n    \"email\": \"nihil\", \n    \"name\": \"provident\", \n    \"email_verified_at\": \"2021-12-29 23:22:20\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"user_type\": 1  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -632,6 +682,11 @@
 "description": ""
 },
 {
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
 "key": "X-Requested-With",
 "value": "XMLHttpRequest",
 "type": "text"
@@ -656,7 +711,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\":[\n\t\t{\n\t\t\t\"id\": 4, \n\t\t\t\"username\": \"eum\", \n\t\t\t\"email\": \"deleniti\", \n\t\t\t\"name\": \"dolor\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"is_active\": false, \n\t\t\t\"created_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"updated_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\":[\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"username\": \"reiciendis\", \n\t\t\t\"email\": \"nihil\", \n\t\t\t\"name\": \"provident\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -681,6 +736,11 @@
 "description": ""
 },
 {
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
 "key": "X-Requested-With",
 "value": "XMLHttpRequest",
 "type": "text"
@@ -688,7 +748,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n  \"username\": \"atque\", \n  \"password\": \"et\", \n  \"email\": \"culpa\", \n  \"name\": \"nihil\", \n  \"email_verified_at\": \"2021-12-29 23:16:45\", \n  \"is_active\": false, \n  \"user_type\": 1  \n}"
+"raw": "{\n  \"username\": \"quibusdam\", \n  \"password\": \"et\", \n  \"email\": \"harum\", \n  \"name\": \"labore\", \n  \"email_verified_at\": \"2021-12-29 23:22:20\", \n  \"is_active\": true, \n  \"user_type\": 1  \n}"
 },
 "description": ""
 },
@@ -705,7 +765,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"username\": \"eum\", \n    \"email\": \"deleniti\", \n    \"name\": \"dolor\", \n    \"email_verified_at\": \"2021-12-29 23:16:45\", \n    \"is_active\": false, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"user_type\": 1  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"username\": \"reiciendis\", \n    \"email\": \"nihil\", \n    \"name\": \"provident\", \n    \"email_verified_at\": \"2021-12-29 23:22:20\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"user_type\": 1  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -728,6 +788,11 @@
 "key": "Content-Type",
 "value": "application/json",
 "description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
 },
 {
 "key": "X-Requested-With",
@@ -779,6 +844,11 @@
 "description": ""
 },
 {
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
 "key": "X-Requested-With",
 "value": "XMLHttpRequest",
 "type": "text"
@@ -786,7 +856,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n\t\"data\": [\n\t{\n\t\t\"username\": \"atque\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"culpa\", \n\t\t\"name\": \"nihil\", \n\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\"is_active\": false, \n\t\t\"user_type\": 1  \n\t}, \n\t{\n\t\t\"username\": \"atque\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"culpa\", \n\t\t\"name\": \"nihil\", \n\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\"is_active\": false, \n\t\t\"user_type\": 1  \n\t}\n\t]\n}" },
+"raw": "{\n\t\"data\": [\n\t{\n\t\t\"username\": \"quibusdam\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"harum\", \n\t\t\"name\": \"labore\", \n\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\"is_active\": true, \n\t\t\"user_type\": 1  \n\t}, \n\t{\n\t\t\"username\": \"quibusdam\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"harum\", \n\t\t\"name\": \"labore\", \n\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\"is_active\": true, \n\t\t\"user_type\": 1  \n\t}\n\t]\n}" },
 "description": ""
 },
 "response": [
@@ -802,7 +872,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 4, \n\t\t\t\"username\": \"eum\", \n\t\t\t\"email\": \"deleniti\", \n\t\t\t\"name\": \"dolor\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"is_active\": false, \n\t\t\t\"created_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"updated_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"username\": \"reiciendis\", \n\t\t\t\"email\": \"nihil\", \n\t\t\t\"name\": \"provident\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -827,6 +897,11 @@
 "description": ""
 },
 {
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
 "key": "X-Requested-With",
 "value": "XMLHttpRequest",
 "type": "text"
@@ -834,7 +909,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n\t\"data\": [\n\t{\n\t\t\"id\": 1,\n\t\t\"username\": \"atque\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"culpa\", \n\t\t\"name\": \"nihil\", \n\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\"is_active\": false, \n\t\t\"user_type\": 1  \n\t}, \n\t{\n\t\t\"id\": 2,\n\t\t\"username\": \"atque\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"culpa\", \n\t\t\"name\": \"nihil\", \n\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\"is_active\": false, \n\t\t\"user_type\": 1  \n\t}\n\t]\n}" },
+"raw": "{\n\t\"data\": [\n\t{\n\t\t\"id\": 1,\n\t\t\"username\": \"quibusdam\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"harum\", \n\t\t\"name\": \"labore\", \n\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\"is_active\": true, \n\t\t\"user_type\": 1  \n\t}, \n\t{\n\t\t\"id\": 2,\n\t\t\"username\": \"quibusdam\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"harum\", \n\t\t\"name\": \"labore\", \n\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\"is_active\": true, \n\t\t\"user_type\": 1  \n\t}\n\t]\n}" },
 "description": ""
 },
 "response": [
@@ -850,7 +925,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 4, \n\t\t\t\"username\": \"eum\", \n\t\t\t\"email\": \"deleniti\", \n\t\t\t\"name\": \"dolor\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"is_active\": false, \n\t\t\t\"created_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"updated_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"username\": \"reiciendis\", \n\t\t\t\"email\": \"nihil\", \n\t\t\t\"name\": \"provident\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -1613,7 +1688,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"username\": \"eum\", \n    \"email\": \"deleniti\", \n    \"name\": \"dolor\", \n    \"email_verified_at\": \"2021-12-29 23:16:45\", \n    \"is_active\": false, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"user_type\": 1  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"username\": \"reiciendis\", \n    \"email\": \"nihil\", \n    \"name\": \"provident\", \n    \"email_verified_at\": \"2021-12-29 23:22:20\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"user_type\": 1  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -1661,7 +1736,7 @@
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Login Successful\",\n  \"data\": {\n    \"id\": 4,\n    \"username\": \"eum\",\n    \"email\": \"deleniti\",\n    \"name\": \"dolor\",\n    \"email_verified_at\": \"2021-12-29 23:16:45\",\n    \"is_active\": false,\n    \"created_at\": \"2021-12-29 23:16:45\",\n    \"updated_at\": \"2021-12-29 23:16:45\",\n    \"user_type\": 1, \n    \"token\": \"cQOkQdVTqnQR8e07AlP5pQkLp4zsjz05wJPW1EeGcQOkQdVTqnQR8e07AlP5pQkLp4zsjz05wJPW1EeG\"\n\t}\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Login Successful\",\n  \"data\": {\n    \"id\": 2,\n    \"username\": \"reiciendis\",\n    \"email\": \"nihil\",\n    \"name\": \"provident\",\n    \"email_verified_at\": \"2021-12-29 23:22:20\",\n    \"is_active\": true,\n    \"created_at\": \"2021-12-29 23:22:20\",\n    \"updated_at\": \"2021-12-29 23:22:20\",\n    \"user_type\": 1, \n    \"token\": \"cQOkQdVTqnQR8e07AlP5pQkLp4zsjz05wJPW1EeGcQOkQdVTqnQR8e07AlP5pQkLp4zsjz05wJPW1EeG\"\n\t}\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -1906,8 +1981,8 @@
 }
 ,
 {
-"name": "Device",
-"description": "device APIs",
+"name": "Desktop",
+"description": "desktop APIs",
 "item": [
 {
 "name": "Product",
@@ -1916,7 +1991,7 @@
 {
 "name": "Add Product",
 "request": {
-"url": "{{host}}/api/device/products",
+"url": "{{host}}/api/desktop/products",
 "method": "POST",
 "header": [
 {
@@ -1932,7 +2007,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n  \"name\": \"odio\", \n  \"price\": 3, \n  \"description\": \"ipsam\", \n  \"is_active\": false  \n}"
+"raw": "{\n  \"name\": \"sit\", \n  \"price\": 3, \n  \"description\": \"magnam\", \n  \"is_active\": true  \n}"
 },
 "description": ""
 },
@@ -1943,13 +2018,13 @@
 "method": "POST",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/products"
+"raw": "{{host}}/api/desktop/products"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"name\": \"sapiente\", \n    \"price\": 3, \n    \"description\": \"et\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"deleted_at\": \"2021-12-29 23:16:45\"  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"name\": \"reprehenderit\", \n    \"price\": 3, \n    \"description\": \"nobis\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"deleted_at\": \"2021-12-29 23:22:20\"  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -1965,7 +2040,7 @@
 {
 "name": "Product Details",
 "request": {
-"url": "{{host}}/api/device/products/id",
+"url": "{{host}}/api/desktop/products/id",
 "method": "GET",
 "header": [
 {
@@ -1992,13 +2067,13 @@
 "method": "GET",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/products/id"
+"raw": "{{host}}/api/desktop/products/id"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"name\": \"sapiente\", \n    \"price\": 3, \n    \"description\": \"et\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"deleted_at\": \"2021-12-29 23:16:45\"  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"name\": \"reprehenderit\", \n    \"price\": 3, \n    \"description\": \"nobis\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"deleted_at\": \"2021-12-29 23:22:20\"  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2015,13 +2090,13 @@
 "request": {
 "method": "GET",
 "url": {
-"raw": "{{host}}/api/device/products",
+"raw": "{{host}}/api/desktop/products",
 "host": [
 "{{host}}"
 ],
 "path": [
 "api",
-"device",
+"desktop",
 "products"
 ],
 "query": [
@@ -2098,13 +2173,13 @@
 "method": "GET",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/products"
+"raw": "{{host}}/api/desktop/products"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\":[\n\t\t{\n\t\t\t\"id\": 4, \n\t\t\t\"name\": \"sapiente\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"et\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"updated_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:16:45\"  \n\t\t}\n\t]\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\":[\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"name\": \"reprehenderit\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"nobis\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:22:20\"  \n\t\t}\n\t]\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2120,7 +2195,7 @@
 {
 "name": "Update Product",
 "request": {
-"url": "{{host}}/api/device/products/id",
+"url": "{{host}}/api/desktop/products/id",
 "method": "PUT",
 "header": [
 {
@@ -2136,7 +2211,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n  \"name\": \"odio\", \n  \"price\": 3, \n  \"description\": \"ipsam\", \n  \"is_active\": false  \n}"
+"raw": "{\n  \"name\": \"sit\", \n  \"price\": 3, \n  \"description\": \"magnam\", \n  \"is_active\": true  \n}"
 },
 "description": ""
 },
@@ -2147,13 +2222,13 @@
 "method": "PUT",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/products/id"
+"raw": "{{host}}/api/desktop/products/id"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"name\": \"sapiente\", \n    \"price\": 3, \n    \"description\": \"et\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"deleted_at\": \"2021-12-29 23:16:45\"  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"name\": \"reprehenderit\", \n    \"price\": 3, \n    \"description\": \"nobis\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"deleted_at\": \"2021-12-29 23:22:20\"  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2169,7 +2244,7 @@
 {
 "name": "Delete Product",
 "request": {
-"url": "{{host}}/api/device/products/id",
+"url": "{{host}}/api/desktop/products/id",
 "method": "DELETE",
 "header": [
 {
@@ -2196,7 +2271,7 @@
 "method": "DELETE",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/products/id"
+"raw": "{{host}}/api/desktop/products/id"
 }
 },
 "status": "OK",
@@ -2218,7 +2293,7 @@
 {
 "name": "Bulk Add Product",
 "request": {
-"url": "{{host}}/api/device/products/bulk-create",
+"url": "{{host}}/api/desktop/products/bulk-create",
 "method": "POST",
 "header": [
 {
@@ -2234,7 +2309,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n\t\"data\": [\n\t{\n\t\t\"name\": \"odio\", \n\t\t\"price\": 3, \n\t\t\"description\": \"ipsam\", \n\t\t\"is_active\": false  \n\t}, \n\t{\n\t\t\"name\": \"odio\", \n\t\t\"price\": 3, \n\t\t\"description\": \"ipsam\", \n\t\t\"is_active\": false  \n\t}\n\t]\n}" },
+"raw": "{\n\t\"data\": [\n\t{\n\t\t\"name\": \"sit\", \n\t\t\"price\": 3, \n\t\t\"description\": \"magnam\", \n\t\t\"is_active\": true  \n\t}, \n\t{\n\t\t\"name\": \"sit\", \n\t\t\"price\": 3, \n\t\t\"description\": \"magnam\", \n\t\t\"is_active\": true  \n\t}\n\t]\n}" },
 "description": ""
 },
 "response": [
@@ -2244,13 +2319,13 @@
 "method": "POST",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/products/bulk-create"
+"raw": "{{host}}/api/desktop/products/bulk-create"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 4, \n\t\t\t\"name\": \"sapiente\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"et\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"updated_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:16:45\"  \n\t\t}\n\t]\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"name\": \"reprehenderit\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"nobis\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:22:20\"  \n\t\t}\n\t]\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2266,7 +2341,7 @@
 {
 "name": "Bulk Update Product",
 "request": {
-"url": "{{host}}/api/device/products/bulk-update",
+"url": "{{host}}/api/desktop/products/bulk-update",
 "method": "POST",
 "header": [
 {
@@ -2282,7 +2357,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n\t\"data\": [\n\t{\n\t\t\"id\": 1,\n\t\t\"name\": \"odio\", \n\t\t\"price\": 3, \n\t\t\"description\": \"ipsam\", \n\t\t\"is_active\": false  \n\t}, \n\t{\n\t\t\"id\": 2,\n\t\t\"name\": \"odio\", \n\t\t\"price\": 3, \n\t\t\"description\": \"ipsam\", \n\t\t\"is_active\": false  \n\t}\n\t]\n}" },
+"raw": "{\n\t\"data\": [\n\t{\n\t\t\"id\": 1,\n\t\t\"name\": \"sit\", \n\t\t\"price\": 3, \n\t\t\"description\": \"magnam\", \n\t\t\"is_active\": true  \n\t}, \n\t{\n\t\t\"id\": 2,\n\t\t\"name\": \"sit\", \n\t\t\"price\": 3, \n\t\t\"description\": \"magnam\", \n\t\t\"is_active\": true  \n\t}\n\t]\n}" },
 "description": ""
 },
 "response": [
@@ -2292,13 +2367,13 @@
 "method": "GET",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/products/bulk-update"
+"raw": "{{host}}/api/desktop/products/bulk-update"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 4, \n\t\t\t\"name\": \"sapiente\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"et\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"updated_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:16:45\"  \n\t\t}\n\t]\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"name\": \"reprehenderit\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"nobis\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:22:20\"  \n\t\t}\n\t]\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2314,7 +2389,7 @@
 {
 "name": "Force Delete Product",
 "request": {
-"url": "{{host}}/api/device/products/id/force-delete",
+"url": "{{host}}/api/desktop/products/id/force-delete",
 "method": "DELETE",
 "header": [
 {
@@ -2341,7 +2416,7 @@
 "method": "GET",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/products/id/force-delete"
+"raw": "{{host}}/api/desktop/products/id/force-delete"
 }
 },
 "status": "OK",
@@ -2368,7 +2443,7 @@
 {
 "name": "Add User",
 "request": {
-"url": "{{host}}/api/device/users",
+"url": "{{host}}/api/desktop/users",
 "method": "POST",
 "header": [
 {
@@ -2384,7 +2459,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n  \"username\": \"atque\", \n  \"password\": \"et\", \n  \"email\": \"culpa\", \n  \"name\": \"nihil\", \n  \"email_verified_at\": \"2021-12-29 23:16:45\", \n  \"is_active\": false, \n  \"user_type\": 1  \n}"
+"raw": "{\n  \"username\": \"quibusdam\", \n  \"password\": \"et\", \n  \"email\": \"harum\", \n  \"name\": \"labore\", \n  \"email_verified_at\": \"2021-12-29 23:22:20\", \n  \"is_active\": true, \n  \"user_type\": 1  \n}"
 },
 "description": ""
 },
@@ -2395,13 +2470,13 @@
 "method": "POST",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/users"
+"raw": "{{host}}/api/desktop/users"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"username\": \"eum\", \n    \"email\": \"deleniti\", \n    \"name\": \"dolor\", \n    \"email_verified_at\": \"2021-12-29 23:16:45\", \n    \"is_active\": false, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"user_type\": 1  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"username\": \"reiciendis\", \n    \"email\": \"nihil\", \n    \"name\": \"provident\", \n    \"email_verified_at\": \"2021-12-29 23:22:20\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"user_type\": 1  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2417,7 +2492,7 @@
 {
 "name": "User Details",
 "request": {
-"url": "{{host}}/api/device/users/id",
+"url": "{{host}}/api/desktop/users/id",
 "method": "GET",
 "header": [
 {
@@ -2444,13 +2519,13 @@
 "method": "GET",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/users/id"
+"raw": "{{host}}/api/desktop/users/id"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"username\": \"eum\", \n    \"email\": \"deleniti\", \n    \"name\": \"dolor\", \n    \"email_verified_at\": \"2021-12-29 23:16:45\", \n    \"is_active\": false, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"user_type\": 1  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"username\": \"reiciendis\", \n    \"email\": \"nihil\", \n    \"name\": \"provident\", \n    \"email_verified_at\": \"2021-12-29 23:22:20\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"user_type\": 1  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2467,13 +2542,13 @@
 "request": {
 "method": "GET",
 "url": {
-"raw": "{{host}}/api/device/users",
+"raw": "{{host}}/api/desktop/users",
 "host": [
 "{{host}}"
 ],
 "path": [
 "api",
-"device",
+"desktop",
 "users"
 ],
 "query": [
@@ -2550,13 +2625,13 @@
 "method": "GET",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/users"
+"raw": "{{host}}/api/desktop/users"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\":[\n\t\t{\n\t\t\t\"id\": 4, \n\t\t\t\"username\": \"eum\", \n\t\t\t\"email\": \"deleniti\", \n\t\t\t\"name\": \"dolor\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"is_active\": false, \n\t\t\t\"created_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"updated_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\":[\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"username\": \"reiciendis\", \n\t\t\t\"email\": \"nihil\", \n\t\t\t\"name\": \"provident\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2572,7 +2647,7 @@
 {
 "name": "Update User",
 "request": {
-"url": "{{host}}/api/device/users/id",
+"url": "{{host}}/api/desktop/users/id",
 "method": "PUT",
 "header": [
 {
@@ -2588,7 +2663,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n  \"username\": \"atque\", \n  \"password\": \"et\", \n  \"email\": \"culpa\", \n  \"name\": \"nihil\", \n  \"email_verified_at\": \"2021-12-29 23:16:45\", \n  \"is_active\": false, \n  \"user_type\": 1  \n}"
+"raw": "{\n  \"username\": \"quibusdam\", \n  \"password\": \"et\", \n  \"email\": \"harum\", \n  \"name\": \"labore\", \n  \"email_verified_at\": \"2021-12-29 23:22:20\", \n  \"is_active\": true, \n  \"user_type\": 1  \n}"
 },
 "description": ""
 },
@@ -2599,13 +2674,13 @@
 "method": "PUT",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/users/id"
+"raw": "{{host}}/api/desktop/users/id"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"username\": \"eum\", \n    \"email\": \"deleniti\", \n    \"name\": \"dolor\", \n    \"email_verified_at\": \"2021-12-29 23:16:45\", \n    \"is_active\": false, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"user_type\": 1  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"username\": \"reiciendis\", \n    \"email\": \"nihil\", \n    \"name\": \"provident\", \n    \"email_verified_at\": \"2021-12-29 23:22:20\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"user_type\": 1  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2621,7 +2696,7 @@
 {
 "name": "Delete User",
 "request": {
-"url": "{{host}}/api/device/users/id",
+"url": "{{host}}/api/desktop/users/id",
 "method": "DELETE",
 "header": [
 {
@@ -2648,7 +2723,7 @@
 "method": "DELETE",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/users/id"
+"raw": "{{host}}/api/desktop/users/id"
 }
 },
 "status": "OK",
@@ -2670,7 +2745,7 @@
 {
 "name": "Bulk Add User",
 "request": {
-"url": "{{host}}/api/device/users/bulk-create",
+"url": "{{host}}/api/desktop/users/bulk-create",
 "method": "POST",
 "header": [
 {
@@ -2686,7 +2761,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n\t\"data\": [\n\t{\n\t\t\"username\": \"atque\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"culpa\", \n\t\t\"name\": \"nihil\", \n\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\"is_active\": false, \n\t\t\"user_type\": 1  \n\t}, \n\t{\n\t\t\"username\": \"atque\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"culpa\", \n\t\t\"name\": \"nihil\", \n\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\"is_active\": false, \n\t\t\"user_type\": 1  \n\t}\n\t]\n}" },
+"raw": "{\n\t\"data\": [\n\t{\n\t\t\"username\": \"quibusdam\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"harum\", \n\t\t\"name\": \"labore\", \n\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\"is_active\": true, \n\t\t\"user_type\": 1  \n\t}, \n\t{\n\t\t\"username\": \"quibusdam\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"harum\", \n\t\t\"name\": \"labore\", \n\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\"is_active\": true, \n\t\t\"user_type\": 1  \n\t}\n\t]\n}" },
 "description": ""
 },
 "response": [
@@ -2696,13 +2771,13 @@
 "method": "POST",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/users/bulk-create"
+"raw": "{{host}}/api/desktop/users/bulk-create"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 4, \n\t\t\t\"username\": \"eum\", \n\t\t\t\"email\": \"deleniti\", \n\t\t\t\"name\": \"dolor\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"is_active\": false, \n\t\t\t\"created_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"updated_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"username\": \"reiciendis\", \n\t\t\t\"email\": \"nihil\", \n\t\t\t\"name\": \"provident\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2718,7 +2793,7 @@
 {
 "name": "Bulk Update User",
 "request": {
-"url": "{{host}}/api/device/users/bulk-update",
+"url": "{{host}}/api/desktop/users/bulk-update",
 "method": "POST",
 "header": [
 {
@@ -2734,7 +2809,7 @@
 ],
 "body": {
 "mode": "raw",
-"raw": "{\n\t\"data\": [\n\t{\n\t\t\"id\": 1,\n\t\t\"username\": \"atque\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"culpa\", \n\t\t\"name\": \"nihil\", \n\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\"is_active\": false, \n\t\t\"user_type\": 1  \n\t}, \n\t{\n\t\t\"id\": 2,\n\t\t\"username\": \"atque\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"culpa\", \n\t\t\"name\": \"nihil\", \n\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\"is_active\": false, \n\t\t\"user_type\": 1  \n\t}\n\t]\n}" },
+"raw": "{\n\t\"data\": [\n\t{\n\t\t\"id\": 1,\n\t\t\"username\": \"quibusdam\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"harum\", \n\t\t\"name\": \"labore\", \n\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\"is_active\": true, \n\t\t\"user_type\": 1  \n\t}, \n\t{\n\t\t\"id\": 2,\n\t\t\"username\": \"quibusdam\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"harum\", \n\t\t\"name\": \"labore\", \n\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\"is_active\": true, \n\t\t\"user_type\": 1  \n\t}\n\t]\n}" },
 "description": ""
 },
 "response": [
@@ -2744,13 +2819,13 @@
 "method": "GET",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/users/bulk-update"
+"raw": "{{host}}/api/desktop/users/bulk-update"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 4, \n\t\t\t\"username\": \"eum\", \n\t\t\t\"email\": \"deleniti\", \n\t\t\t\"name\": \"dolor\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"is_active\": false, \n\t\t\t\"created_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"updated_at\": \"2021-12-29 23:16:45\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"username\": \"reiciendis\", \n\t\t\t\"email\": \"nihil\", \n\t\t\t\"name\": \"provident\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2766,12 +2841,12 @@
 },
 {
 "name": "Login",
-"description": "device Login API",
+"description": "desktop Login API",
 "item": [
 {
 "name": "Register",
 "request": {
-"url": "{{host}}/api/device/register",
+"url": "{{host}}/api/desktop/register",
 "method": "POST",
 "header": [
 {
@@ -2798,13 +2873,13 @@
 "method": "POST",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/register"
+"raw": "{{host}}/api/desktop/register"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 4, \n    \"username\": \"eum\", \n    \"email\": \"deleniti\", \n    \"name\": \"dolor\", \n    \"email_verified_at\": \"2021-12-29 23:16:45\", \n    \"is_active\": false, \n    \"created_at\": \"2021-12-29 23:16:45\", \n    \"updated_at\": \"2021-12-29 23:16:45\", \n    \"user_type\": 1  \n   }\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"username\": \"reiciendis\", \n    \"email\": \"nihil\", \n    \"name\": \"provident\", \n    \"email_verified_at\": \"2021-12-29 23:22:20\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"user_type\": 1  \n   }\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2819,7 +2894,7 @@
 {
 "name": "Login",
 "request": {
-"url": "{{host}}/api/device/login",
+"url": "{{host}}/api/desktop/login",
 "method": "POST",
 "header": [
 {
@@ -2846,13 +2921,13 @@
 "method": "POST",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/login"
+"raw": "{{host}}/api/desktop/login"
 }
 },
 "status": "OK",
 "code": 200,
 "_postman_previewlanguage": "json",
-"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Login Successful\",\n  \"data\": {\n    \"id\": 4,\n    \"username\": \"eum\",\n    \"email\": \"deleniti\",\n    \"name\": \"dolor\",\n    \"email_verified_at\": \"2021-12-29 23:16:45\",\n    \"is_active\": false,\n    \"created_at\": \"2021-12-29 23:16:45\",\n    \"updated_at\": \"2021-12-29 23:16:45\",\n    \"user_type\": 1, \n    \"token\": \"cQOkQdVTqnQR8e07AlP5pQkLp4zsjz05wJPW1EeGcQOkQdVTqnQR8e07AlP5pQkLp4zsjz05wJPW1EeG\"\n\t}\n}",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Login Successful\",\n  \"data\": {\n    \"id\": 2,\n    \"username\": \"reiciendis\",\n    \"email\": \"nihil\",\n    \"name\": \"provident\",\n    \"email_verified_at\": \"2021-12-29 23:22:20\",\n    \"is_active\": true,\n    \"created_at\": \"2021-12-29 23:22:20\",\n    \"updated_at\": \"2021-12-29 23:22:20\",\n    \"user_type\": 1, \n    \"token\": \"cQOkQdVTqnQR8e07AlP5pQkLp4zsjz05wJPW1EeGcQOkQdVTqnQR8e07AlP5pQkLp4zsjz05wJPW1EeG\"\n\t}\n}",
 "header": [
 {
 "key": "Content-Type",
@@ -2867,7 +2942,7 @@
 {
 "name": "Forgot Password",
 "request": {
-"url": "{{host}}/api/device/forgot-password",
+"url": "{{host}}/api/desktop/forgot-password",
 "method": "POST",
 "header": [
 {
@@ -2894,7 +2969,7 @@
 "method": "POST",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/forgot-password"
+"raw": "{{host}}/api/desktop/forgot-password"
 }
 },
 "status": "OK",
@@ -2915,7 +2990,7 @@
 {
 "name": "Validate Reset Password OTP",
 "request": {
-"url": "{{host}}/api/device/validate-otp",
+"url": "{{host}}/api/desktop/validate-otp",
 "method": "POST",
 "header": [
 {
@@ -2942,7 +3017,7 @@
 "method": "POST",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/validate-otp"
+"raw": "{{host}}/api/desktop/validate-otp"
 }
 },
 "status": "OK",
@@ -2963,7 +3038,7 @@
 {
 "name": "Reset Password",
 "request": {
-"url": "{{host}}/api/device/reset-password",
+"url": "{{host}}/api/desktop/reset-password",
 "method": "PUT",
 "header": [
 {
@@ -2990,7 +3065,7 @@
 "method": "PUT",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/reset-password"
+"raw": "{{host}}/api/desktop/reset-password"
 }
 },
 "status": "OK",
@@ -3011,7 +3086,7 @@
 {
 "name": "Change Password",
 "request": {
-"url": "{{host}}/api/device/change-password",
+"url": "{{host}}/api/desktop/change-password",
 "method": "PUT",
 "header": [
 {
@@ -3043,7 +3118,7 @@
 "method": "PUT",
 "header": [],
 "url": {
-"raw": "{{host}}/api/device/change-password"
+"raw": "{{host}}/api/desktop/change-password"
 }
 },
 "status": "OK",
@@ -3064,7 +3139,1198 @@
 {
 "name": "Logout",
 "request": {
-"url": "{{host}}/api/device/logout",
+"url": "{{host}}/api/desktop/logout",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": ""
+},
+"description": ""
+},
+"_postman_isSubFolder": true
+}
+]
+} 
+]
+}
+,
+{
+"name": "Client",
+"description": "client APIs",
+"item": [
+{
+"name": "Product",
+"description": "Product Model APIs",
+"item": [
+{
+"name": "Add Product",
+"request": {
+"url": "{{host}}/api/client/products",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"name\": \"sit\", \n  \"price\": 3, \n  \"description\": \"magnam\", \n  \"is_active\": true  \n}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Add Product response",
+"originalRequest": {
+"method": "POST",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/products"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"name\": \"reprehenderit\", \n    \"price\": 3, \n    \"description\": \"nobis\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"deleted_at\": \"2021-12-29 23:22:20\"  \n   }\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Product Details",
+"request": {
+"url": "{{host}}/api/client/products/id",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Product Details response",
+"originalRequest": {
+"method": "GET",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/products/id"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"name\": \"reprehenderit\", \n    \"price\": 3, \n    \"description\": \"nobis\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"deleted_at\": \"2021-12-29 23:22:20\"  \n   }\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+},
+{
+"name": "Product Listing",
+"request": {
+"method": "GET",
+"url": {
+"raw": "{{host}}/api/client/products",
+"host": [
+"{{host}}"
+],
+"path": [
+"api",
+"client",
+"products"
+],
+"query": [
+{
+"key": "limit",
+"value": null,
+"disabled": true
+},
+{
+"key": "skip",
+"value": null,
+"disabled": true
+},
+{
+"key": "filter[field_name]",
+"value": null,
+"description": "e.g filter[email] : Search records by field",
+"disabled": true
+},
+{
+"key": "filter[relation.field]",
+"value": null,
+"description": "e.g filter[addedByUser.username] : Search records by relationship fields",
+"disabled": true
+},
+{
+"key": "sort",
+"value": "field_name",
+"description": "e.g created_at : Sort data by field in asc order",
+"disabled": true
+},
+{
+"key": "sort",
+"value": "-field_name",
+"description": "e.g -created_at : Sort data by field in desc order, add dash (-) before field to sort in desc order",
+"disabled": true
+},
+{
+"key": "fields[table_name]",
+"value": "field1,field2,field2",
+"description": "e.g fields[users] : id,username.email => get only given field in response",
+"disabled": true
+},
+{
+"key": "include",
+"value": "relationshipName",
+"disabled": true,
+"description": "e.g include : addedByUser or include : addedByUser,updatedByUser get added relations into response"
+}
+]
+},
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Product Listing",
+"originalRequest": {
+"method": "GET",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/products"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\":[\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"name\": \"reprehenderit\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"nobis\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:22:20\"  \n\t\t}\n\t]\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Update Product",
+"request": {
+"url": "{{host}}/api/client/products/id",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"name\": \"sit\", \n  \"price\": 3, \n  \"description\": \"magnam\", \n  \"is_active\": true  \n}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Update Product response",
+"originalRequest": {
+"method": "PUT",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/products/id"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"name\": \"reprehenderit\", \n    \"price\": 3, \n    \"description\": \"nobis\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"deleted_at\": \"2021-12-29 23:22:20\"  \n   }\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Delete Product",
+"request": {
+"url": "{{host}}/api/client/products/id",
+"method": "DELETE",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Delete Product response",
+"originalRequest": {
+"method": "DELETE",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/products/id"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": \"Product deleted successfully.\"\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Add Product",
+"request": {
+"url": "{{host}}/api/client/products/bulk-create",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n\t\"data\": [\n\t{\n\t\t\"name\": \"sit\", \n\t\t\"price\": 3, \n\t\t\"description\": \"magnam\", \n\t\t\"is_active\": true  \n\t}, \n\t{\n\t\t\"name\": \"sit\", \n\t\t\"price\": 3, \n\t\t\"description\": \"magnam\", \n\t\t\"is_active\": true  \n\t}\n\t]\n}" },
+"description": ""
+},
+"response": [
+{
+"name": "Bulk Add Product response",
+"originalRequest": {
+"method": "POST",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/products/bulk-create"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"name\": \"reprehenderit\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"nobis\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:22:20\"  \n\t\t}\n\t]\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Update Product",
+"request": {
+"url": "{{host}}/api/client/products/bulk-update",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n\t\"data\": [\n\t{\n\t\t\"id\": 1,\n\t\t\"name\": \"sit\", \n\t\t\"price\": 3, \n\t\t\"description\": \"magnam\", \n\t\t\"is_active\": true  \n\t}, \n\t{\n\t\t\"id\": 2,\n\t\t\"name\": \"sit\", \n\t\t\"price\": 3, \n\t\t\"description\": \"magnam\", \n\t\t\"is_active\": true  \n\t}\n\t]\n}" },
+"description": ""
+},
+"response": [
+{
+"name": "Bulk Update Product response",
+"originalRequest": {
+"method": "GET",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/products/bulk-update"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"name\": \"reprehenderit\", \n\t\t\t\"price\": 3, \n\t\t\t\"description\": \"nobis\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"deleted_at\": \"2021-12-29 23:22:20\"  \n\t\t}\n\t]\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Force Delete Product",
+"request": {
+"url": "{{host}}/api/client/products/id/force-delete",
+"method": "DELETE",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Force delete Product response",
+"originalRequest": {
+"method": "GET",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/products/id/force-delete"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": \"Product deleted successfully.\"\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+]
+},
+{
+"name": "User",
+"description": "User Model APIs",
+"item": [
+{
+"name": "Add User",
+"request": {
+"url": "{{host}}/api/client/users",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"username\": \"quibusdam\", \n  \"password\": \"et\", \n  \"email\": \"harum\", \n  \"name\": \"labore\", \n  \"email_verified_at\": \"2021-12-29 23:22:20\", \n  \"is_active\": true, \n  \"user_type\": 1  \n}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Add User response",
+"originalRequest": {
+"method": "POST",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/users"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"username\": \"reiciendis\", \n    \"email\": \"nihil\", \n    \"name\": \"provident\", \n    \"email_verified_at\": \"2021-12-29 23:22:20\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"user_type\": 1  \n   }\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "User Details",
+"request": {
+"url": "{{host}}/api/client/users/id",
+"method": "GET",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "User Details response",
+"originalRequest": {
+"method": "GET",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/users/id"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"username\": \"reiciendis\", \n    \"email\": \"nihil\", \n    \"name\": \"provident\", \n    \"email_verified_at\": \"2021-12-29 23:22:20\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"user_type\": 1  \n   }\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+},
+{
+"name": "User Listing",
+"request": {
+"method": "GET",
+"url": {
+"raw": "{{host}}/api/client/users",
+"host": [
+"{{host}}"
+],
+"path": [
+"api",
+"client",
+"users"
+],
+"query": [
+{
+"key": "limit",
+"value": null,
+"disabled": true
+},
+{
+"key": "skip",
+"value": null,
+"disabled": true
+},
+{
+"key": "filter[field_name]",
+"value": null,
+"description": "e.g filter[email] : Search records by field",
+"disabled": true
+},
+{
+"key": "filter[relation.field]",
+"value": null,
+"description": "e.g filter[addedByUser.username] : Search records by relationship fields",
+"disabled": true
+},
+{
+"key": "sort",
+"value": "field_name",
+"description": "e.g created_at : Sort data by field in asc order",
+"disabled": true
+},
+{
+"key": "sort",
+"value": "-field_name",
+"description": "e.g -created_at : Sort data by field in desc order, add dash (-) before field to sort in desc order",
+"disabled": true
+},
+{
+"key": "fields[table_name]",
+"value": "field1,field2,field2",
+"description": "e.g fields[users] : id,username.email => get only given field in response",
+"disabled": true
+},
+{
+"key": "include",
+"value": "relationshipName",
+"disabled": true,
+"description": "e.g include : addedByUser or include : addedByUser,updatedByUser get added relations into response"
+}
+]
+},
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "User Listing",
+"originalRequest": {
+"method": "GET",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/users"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\":[\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"username\": \"reiciendis\", \n\t\t\t\"email\": \"nihil\", \n\t\t\t\"name\": \"provident\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Update User",
+"request": {
+"url": "{{host}}/api/client/users/id",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"username\": \"quibusdam\", \n  \"password\": \"et\", \n  \"email\": \"harum\", \n  \"name\": \"labore\", \n  \"email_verified_at\": \"2021-12-29 23:22:20\", \n  \"is_active\": true, \n  \"user_type\": 1  \n}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Update User response",
+"originalRequest": {
+"method": "PUT",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/users/id"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"username\": \"reiciendis\", \n    \"email\": \"nihil\", \n    \"name\": \"provident\", \n    \"email_verified_at\": \"2021-12-29 23:22:20\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"user_type\": 1  \n   }\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Delete User",
+"request": {
+"url": "{{host}}/api/client/users/id",
+"method": "DELETE",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Delete User response",
+"originalRequest": {
+"method": "DELETE",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/users/id"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": \"User deleted successfully.\"\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Add User",
+"request": {
+"url": "{{host}}/api/client/users/bulk-create",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n\t\"data\": [\n\t{\n\t\t\"username\": \"quibusdam\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"harum\", \n\t\t\"name\": \"labore\", \n\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\"is_active\": true, \n\t\t\"user_type\": 1  \n\t}, \n\t{\n\t\t\"username\": \"quibusdam\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"harum\", \n\t\t\"name\": \"labore\", \n\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\"is_active\": true, \n\t\t\"user_type\": 1  \n\t}\n\t]\n}" },
+"description": ""
+},
+"response": [
+{
+"name": "Bulk Add User response",
+"originalRequest": {
+"method": "POST",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/users/bulk-create"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"username\": \"reiciendis\", \n\t\t\t\"email\": \"nihil\", \n\t\t\t\"name\": \"provident\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+,
+{
+"name": "Bulk Update User",
+"request": {
+"url": "{{host}}/api/client/users/bulk-update",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n\t\"data\": [\n\t{\n\t\t\"id\": 1,\n\t\t\"username\": \"quibusdam\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"harum\", \n\t\t\"name\": \"labore\", \n\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\"is_active\": true, \n\t\t\"user_type\": 1  \n\t}, \n\t{\n\t\t\"id\": 2,\n\t\t\"username\": \"quibusdam\", \n\t\t\"password\": \"et\", \n\t\t\"email\": \"harum\", \n\t\t\"name\": \"labore\", \n\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\"is_active\": true, \n\t\t\"user_type\": 1  \n\t}\n\t]\n}" },
+"description": ""
+},
+"response": [
+{
+"name": "Bulk Update User response",
+"originalRequest": {
+"method": "GET",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/users/bulk-update"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": [\n\t\t{\n\t\t\t\"id\": 2, \n\t\t\t\"username\": \"reiciendis\", \n\t\t\t\"email\": \"nihil\", \n\t\t\t\"name\": \"provident\", \n\t\t\t\"email_verified_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"is_active\": true, \n\t\t\t\"created_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"updated_at\": \"2021-12-29 23:22:20\", \n\t\t\t\"user_type\": 1  \n\t\t}\n\t]\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+}
+]
+},
+{
+"name": "Login",
+"description": "client Login API",
+"item": [
+{
+"name": "Register",
+"request": {
+"url": "{{host}}/api/client/register",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n \"username\": \"Tony\",\n  \"password\": \"Tony123\",\n  \"email\": \"tony123@gamil.com\",\n  \"name\": \"Tony\",\n  \"is_active\": true,\n  \"role\": \"1\"\n}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Register response",
+"originalRequest": {
+"method": "POST",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/register"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": {\n    \"id\": 2, \n    \"username\": \"reiciendis\", \n    \"email\": \"nihil\", \n    \"name\": \"provident\", \n    \"email_verified_at\": \"2021-12-29 23:22:20\", \n    \"is_active\": true, \n    \"created_at\": \"2021-12-29 23:22:20\", \n    \"updated_at\": \"2021-12-29 23:22:20\", \n    \"user_type\": 1  \n   }\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+},
+{
+"name": "Login",
+"request": {
+"url": "{{host}}/api/client/login",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"username\": \"isaiah89@yahoo.com\",\n  \"password\": \"IQa8cNBUbFk2mgr\"\n}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Login response",
+"originalRequest": {
+"method": "POST",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/login"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Login Successful\",\n  \"data\": {\n    \"id\": 2,\n    \"username\": \"reiciendis\",\n    \"email\": \"nihil\",\n    \"name\": \"provident\",\n    \"email_verified_at\": \"2021-12-29 23:22:20\",\n    \"is_active\": true,\n    \"created_at\": \"2021-12-29 23:22:20\",\n    \"updated_at\": \"2021-12-29 23:22:20\",\n    \"user_type\": 1, \n    \"token\": \"cQOkQdVTqnQR8e07AlP5pQkLp4zsjz05wJPW1EeGcQOkQdVTqnQR8e07AlP5pQkLp4zsjz05wJPW1EeG\"\n\t}\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+},
+{
+"name": "Forgot Password",
+"request": {
+"url": "{{host}}/api/client/forgot-password",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"email\": \"yourmail@gmail.com\"\n}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Forgot password response",
+"originalRequest": {
+"method": "POST",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/forgot-password"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": \"otp successfully send to your email.\"\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+},
+{
+"name": "Validate Reset Password OTP",
+"request": {
+"url": "{{host}}/api/client/validate-otp",
+"method": "POST",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"otp\": \"icR86F\"\n}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Validate reset password OTP response",
+"originalRequest": {
+"method": "POST",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/validate-otp"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": \"Invalid OTP.\"\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+},
+{
+"name": "Reset Password",
+"request": {
+"url": "{{host}}/api/client/reset-password",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"code\": \"icR86F\",\n  \"new_password\": \"Your Password\"\n}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Reset password response",
+"originalRequest": {
+"method": "PUT",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/reset-password"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": \"Password reset successfully.\"\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+},
+{
+"name": "Change Password",
+"request": {
+"url": "{{host}}/api/client/change-password",
+"method": "PUT",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json",
+"description": ""
+},
+{
+"key": "Authorization",
+"value": "Bearer {{token}}",
+"type": "text"
+},
+{
+"key": "X-Requested-With",
+"value": "XMLHttpRequest",
+"type": "text"
+}
+],
+"body": {
+"mode": "raw",
+"raw": "{\n  \"old_password\": \"Your Old Password\",\n  \"new_password\": \"Your New Password\"\n}"
+},
+"description": ""
+},
+"response": [
+{
+"name": "Change password response",
+"originalRequest": {
+"method": "PUT",
+"header": [],
+"url": {
+"raw": "{{host}}/api/client/change-password"
+}
+},
+"status": "OK",
+"code": 200,
+"_postman_previewlanguage": "json",
+"body": "{\n  \"status\": \"SUCCESS\",\n  \"message\": \"Your request is successfully executed\",\n  \"data\": \"\"\n}",
+"header": [
+{
+"key": "Content-Type",
+"value": "application/json"
+}
+],
+"cookie": []
+}
+],
+"_postman_isSubFolder": true
+},
+{
+"name": "Logout",
+"request": {
+"url": "{{host}}/api/client/logout",
 "method": "POST",
 "header": [
 {

@@ -8,17 +8,17 @@ use Illuminate\Http\Request;
 class ProductResource extends BaseAPIResource
 {
     /**
-    * @param  Request $request
-    *
-    * @return  array
-    */
+     * @param Request $request
+     *
+     * @return array
+     */
     public function toArray($request): array
     {
-        $fieldsFilter = $request->get('fields'); 
-        if(!empty($fieldsFilter) || $request->get('include')) {
-            return $this->resource->toArray(); 
+        $fieldsFilter = $request->get('fields');
+        if (!empty($fieldsFilter) || $request->get('include')) {
+            return $this->resource->toArray();
         }
-        
+
         return [
             'id' => $this->id,
             'name' => $this->name,
@@ -32,5 +32,4 @@ class ProductResource extends BaseAPIResource
             'deleted_at' => $this->deleted_at,
         ];
     }
-
 }
